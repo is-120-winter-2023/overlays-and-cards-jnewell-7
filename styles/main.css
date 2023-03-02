@@ -105,18 +105,19 @@ ul {
 }
 
 nav {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 main {
-  margin: 0 auto;
+  /* margin: 0 auto;
   padding: 0 1rem;
-  max-width: 60rem;
+  max-width: 60rem; */
   background-color: #f2f2f2ff;
 }
 
 body {
   background-color: #f2f2f2ff;
+  font-size: 1.5vw;
 }
 
 p {
@@ -125,8 +126,17 @@ p {
 }
 
 article {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+aside {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
 }
 
 footer {
@@ -137,16 +147,17 @@ footer {
 
 h1 {
   font-family: "Fjalla One", sans-serif;
-  color: var(--text);
-  font-size: 10rem;
-  padding-bottom: 0.2em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+  font-size: 9em;
+  /* padding-bottom: 0.2em; */
   text-align: center;
 }
 
 h2 {
   font-family: "Fjalla One", sans-serif;
   color: var(--blue);
-  font-size: 5rem;
+  font-size: 5em;
   padding-top: 0.4em;
   padding-bottom: 0.2em;
 }
@@ -154,7 +165,7 @@ h2 {
 h3 {
   font-family: "Fjalla One", sans-serif;
   color: var(--grey);
-  font-size: 3.5rem;
+  font-size: 3.5em;
   padding-top: 0.4em;
   padding-bottom: 0.2em;
 }
@@ -162,7 +173,7 @@ h3 {
 h4 {
   font-family: "Fjalla One", sans-serif;
   color: var(--red);
-  font-size: 2rem;
+  font-size: 2em;
   padding-top: 0.4em;
   padding-bottom: 0.2em;
 }
@@ -203,4 +214,23 @@ a.button:hover {
   text-decoration: none;
   transition-duration: 200ms;
   cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero .hero-text {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  height: 80vh;
+  padding: 13rem;
+}
+
+.hero-p {
+  margin: 0;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

@@ -1,0 +1,206 @@
+/*****************************************************/
+/* This semester we will be using my variation of    */
+/* Josh Comeau's CSS Reset instead of normalize      */
+/* Read more at                                      */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*****************************************************/
+/* Always add your CSS below the reset CSS           */
+/*****************************************************/
+
+:root {
+  --blue: #609ea0;
+  --red: #be0100ff;
+  --grey: #707f90;
+  --black: #000000;
+  --white: #ffffff;
+  --text: #414141ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* until you get a feel for overflow, I'll keep these next two commented out */
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} */
+
+/* p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+} */
+
+/* temp CSS for HTML only assignments */
+picture img {
+  width: 100%;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+/************ add your CSS here *****************/
+ul {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20rem;
+  padding-left: 20rem;
+  padding-top: 1.5rem;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 60rem;
+  background-color: #f2f2f2ff;
+}
+
+body {
+  background-color: #f2f2f2ff;
+}
+
+p {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+article {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--grey);
+  color: white;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: var(--text);
+  font-size: 10rem;
+  padding-bottom: 0.2em;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Fjalla One", sans-serif;
+  color: var(--blue);
+  font-size: 5rem;
+  padding-top: 0.4em;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-family: "Fjalla One", sans-serif;
+  color: var(--grey);
+  font-size: 3.5rem;
+  padding-top: 0.4em;
+  padding-bottom: 0.2em;
+}
+
+h4 {
+  font-family: "Fjalla One", sans-serif;
+  color: var(--red);
+  font-size: 2rem;
+  padding-top: 0.4em;
+  padding-bottom: 0.2em;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+a[href]:hover {
+  /* font-size: 1.1rem; */
+  text-decoration: underline;
+}
+
+/* * {
+  background-color: white;
+} */
+
+.button {
+  border: solid 2px black;
+  background-color: white;
+  color: black;
+  padding: 0.7rem 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+}
+
+a.button:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition-duration: 200ms;
+  cursor: pointer;
+}

@@ -226,11 +226,75 @@ a.button:hover {
   inset: 0;
   text-align: center;
   height: 80vh;
-  padding: 13rem;
+  padding: 16rem;
 }
 
 .hero-p {
   margin: 0;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 2em;
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.hero h1 {
+  font-size: clamp(15rem, 11vw + 1rem, 9rem);
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.cards img {
+  border-radius: 18px;
+}
+
+.cards p {
+  color:white;
+  position: absolute;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  inset: 0;
+  text-align: center;
+  padding-top: 6rem;
+  text-shadow: 0px 0px 5px black;
+  
+}
+
+.card {
+  flex: 1 1 0;
+  position: relative;
+
+}
+
+.card:hover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  white-space: normal;
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+  transition: .3s cubic-bezier(0,0,.5,1);
+  transform: scale(1.05)
+}
+
+section {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }

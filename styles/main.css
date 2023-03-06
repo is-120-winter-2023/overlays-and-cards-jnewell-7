@@ -268,14 +268,13 @@ a.button:hover {
 .cards p {
   color:white;
   position: absolute;
-  font-size: 3rem;
+  font-size: 2em;
   text-align: center;
   font-weight: bold;
   inset: 0;
   text-align: center;
-  padding-top: 6rem;
   text-shadow: 0px 0px 5px black;
-  
+  justify-content: center;
 }
 
 .card {

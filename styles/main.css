@@ -93,19 +93,22 @@ img[src$="svg"] {
 }
 
 /************ add your CSS here *****************/
-ul {
-  list-style-type: none;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 20rem;
-  padding-left: 20rem;
-  padding-top: 1.5rem;
-}
-
 nav {
   font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+nav a {
+  padding: 1rem;
 }
 
 main {
@@ -147,7 +150,7 @@ footer {
 
 h1 {
   font-family: "Fjalla One", sans-serif;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 0px 0px 4px black;
   color: white;
   font-size: 9em;
   /* padding-bottom: 0.2em; */
@@ -232,7 +235,7 @@ a.button:hover {
 .hero-p {
   margin: 0;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: 0px 0px 3px black;
   font-size: 2em;
 }
 
@@ -258,21 +261,23 @@ a.button:hover {
 .cards {
   display: flex;
   gap: 1rem;
-  
+  align-items: center;
+  justify-content: center;
 }
 
 .cards img {
   border-radius: 18px;
+  display: flex;
 }
 
 .cards p {
-  color:white;
+  color: white;
+  display: flex;
   position: absolute;
   font-size: 2em;
-  text-align: center;
+  align-items: center;
   font-weight: bold;
   inset: 0;
-  text-align: center;
   text-shadow: 0px 0px 5px black;
   justify-content: center;
 }
@@ -280,7 +285,7 @@ a.button:hover {
 .card {
   flex: 1 1 0;
   position: relative;
-
+  transition: 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 
 .card:hover {
@@ -289,8 +294,8 @@ a.button:hover {
   border-radius: 18px;
   white-space: normal;
   box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-  transition: .3s cubic-bezier(0,0,.5,1);
-  transform: scale(1.05)
+  transform: scale(1.05);
+  transition: 0.3s cubic-bezier(0, 0, 0.5, 1);
 }
 
 section {
